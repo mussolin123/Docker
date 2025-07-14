@@ -1,7 +1,7 @@
 const root = document.getElementById("root");
 
 async function loadTasks() {
-  const res = await fetch("http://localhost:3000/tasks");
+  const res = await fetch("http://backend:3000/tasks");
   const tasks = await res.json();
   root.innerHTML = `
     <h1>Lista de Tarefas</h1>
